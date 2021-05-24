@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import RestaurantButton from "./RestaurentButton";
 
 const Restaurant = () => {
-  const pizzas = 0;
+  const [pizza, setPizza] = useState(0);
   return (
-    <div>
-      <h3>Restaurant Orders</h3>
-      <ul>
-        <li>
-          Pizzas: {pizzas} <button className="btn btn-primary">Add</button>
-        </li>
-      </ul>
-    </div>
+    <>
+      <div id="restauButton">
+        <h3>Restaurant Orders</h3>
+
+        <p>PiZZA :{pizza}</p>
+        <button
+          onClick={() => {
+            setPizza(pizza + 1);
+          }}
+        >
+          add
+        </button>
+        <RestaurantButton />
+      </div>
+    </>
   );
 };
 

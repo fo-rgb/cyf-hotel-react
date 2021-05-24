@@ -48,10 +48,27 @@ tr {
 }
 
 .footer {
-  padding-top: 20px;
+  padding-top: 2em;
   text-align: center;
 }
 
 .card {
   width: 18rem;
+}
+
+#restauButton {
+  text-align: center;
+}
+#paraTodos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#footerId {
+  background-color: #222;
+  color: white;
+}
+#customerAll {
+  justify-content: space-between;
 }
