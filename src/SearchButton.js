@@ -6,7 +6,8 @@ function SearchButton() {
       <div>
         <button
           onClick={e => {
-            console.log(e);
+            e.preventDefault();
+            console.log(e.target.value);
           }}
         >
           Search

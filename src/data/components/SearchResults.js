@@ -57,8 +57,9 @@ const SearchResults = props => {
                         id={result.id}
                         onClick={() => {
                           setIndexCustomer(result.id);
+                          setButtonId(true);
                         }}
-                        onClick={handleShowProfile}
+                        // onClick={handleShowProfile}
                       >
                         see
                       </button>
@@ -70,7 +71,7 @@ const SearchResults = props => {
         </tbody>
       </table>
 
-      <CustomerProfile id={buttonId} info={indexCustomer} />
+      {buttonId && <CustomerProfile id={buttonId} info={indexCustomer} />}
     </>
   );
 };
